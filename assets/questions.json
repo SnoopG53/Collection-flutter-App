@@ -1,0 +1,20 @@
+[
+  {
+    "question": "What is Flutter?",
+    "options": ["A framework", "A database", "A programming language"],
+    "correct": [0],
+    "type": "multiple_choice_single"
+  },
+  {
+    "question": "Which of these are fruits?",
+    "options": ["Apple", "Banana", "Flutter"],
+    "correct": [0, 1],
+    "type": "multiple_choice_multiple"
+  },
+  {
+    "question": "I am a good student.",
+    "options": ["True", "False"],
+    "correct": [0],
+    "type": "true_false"
+  }
+]
