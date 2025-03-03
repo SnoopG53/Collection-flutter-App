@@ -30,31 +30,26 @@ class HomePage extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            // Standard Hero Animation
             _buildAnimationTile(
               context,
               'Standard Hero Animation',
               const StandardHeroPage(),
             ),
-            // Radial Expansion Animation
             _buildAnimationTile(
               context,
               'Radial Expansion Animation',
               const RadialHeroPage(),
             ),
-            // Fade Through Hero Animation
             _buildAnimationTile(
               context,
               'Fade-Through Hero Animation',
               const FadeThroughHeroPage(),
             ),
-            // Scale Transition Hero Animation
             _buildAnimationTile(
               context,
               'Scale Hero Animation',
               const ScaleHeroPage(),
             ),
-            // Slide Transition Hero Animation
             _buildAnimationTile(
               context,
               'Slide Hero Animation',
@@ -98,10 +93,7 @@ class StandardHeroPage extends StatelessWidget {
           },
           child: Hero(
             tag: 'standardHero',
-            child: Image.network(
-              'https://flutter.dev/images/flutter-logo-sharing.png',
-              width: 100,
-            ),
+            child: const FlutterLogo(size: 100),
           ),
         ),
       ),
@@ -119,10 +111,7 @@ class HeroDetailPage extends StatelessWidget {
       body: Center(
         child: Hero(
           tag: 'standardHero',
-          child: Image.network(
-            'https://flutter.dev/images/flutter-logo-sharing.png',
-            width: 300,
-          ),
+          child: const FlutterLogo(size: 300),
         ),
       ),
     );
@@ -152,12 +141,7 @@ class RadialHeroPage extends StatelessWidget {
           child: Hero(
             tag: 'radialHero',
             child: ClipOval(
-              child: Image.network(
-                'https://flutter.dev/images/flutter-logo-sharing.png',
-                width: 100,
-                height: 100,
-                fit: BoxFit.cover,
-              ),
+              child: const FlutterLogo(size: 100),
             ),
           ),
         ),
@@ -177,12 +161,7 @@ class RadialDetailPage extends StatelessWidget {
         child: Hero(
           tag: 'radialHero',
           child: ClipOval(
-            child: Image.network(
-              'https://flutter.dev/images/flutter-logo-sharing.png',
-              width: 300,
-              height: 300,
-              fit: BoxFit.cover,
-            ),
+            child: const FlutterLogo(size: 300),
           ),
         ),
       ),
@@ -217,10 +196,7 @@ class FadeThroughHeroPage extends StatelessWidget {
           },
           child: Hero(
             tag: 'fadeHero',
-            child: Image.network(
-              'https://flutter.dev/images/flutter-logo-sharing.png',
-              width: 100,
-            ),
+            child: const FlutterLogo(size: 100),
           ),
         ),
       ),
@@ -255,10 +231,7 @@ class ScaleHeroPage extends StatelessWidget {
           },
           child: Hero(
             tag: 'scaleHero',
-            child: Image.network(
-              'https://flutter.dev/images/flutter-logo-sharing.png',
-              width: 100,
-            ),
+            child: const FlutterLogo(size: 100),
           ),
         ),
       ),
@@ -296,10 +269,7 @@ class SlideHeroPage extends StatelessWidget {
           },
           child: Hero(
             tag: 'slideHero',
-            child: Image.network(
-              'https://flutter.dev/images/flutter-logo-sharing.png',
-              width: 100,
-            ),
+            child: const FlutterLogo(size: 100),
           ),
         ),
       ),
