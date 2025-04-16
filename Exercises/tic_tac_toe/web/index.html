@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="tic_tac_toe">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <!-- Google Sign-In Web Client ID -->
+  <meta name="google-signin-client_id" content="244104968868-sjd80jhcd5tcoirusq70s1mhno7ehpgs.apps.googleusercontent.com">
+
+  <title>tic_tac_toe</title>
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Firebase SDKs (compat version for Flutter Web) -->
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+
+  <!-- Your Firebase configuration -->
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyB5qs63VjPxcEizUd63r6R1L4IhN2T445Y",
+      authDomain: "yucheng-guan.firebaseapp.com",
+      projectId: "yucheng-guan",
+      storageBucket: "yucheng-guan.firebasestorage.app",
+      messagingSenderId: "244104968868",
+      appId: "1:244104968868:web:529f41418b0fa8c0a88431",
+      measurementId: "G-Q9M5V5MB80"
+    };
+
+    // Initialize Firebase (compat style)
+    firebase.initializeApp(firebaseConfig);
+  </script>
+</head>
+
+<body>
+<!-- Flutter entrypoint -->
+<script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
